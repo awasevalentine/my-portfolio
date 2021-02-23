@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularMaterialModule } from './core/modules/angular.material.module';
 import { MessagingService } from './core/service/messaging.service';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,10 @@ import { HttpClientModule } from '@angular/common/http';
     AngularMaterialModule,
     HttpClientModule
   ],
-  providers: [MessagingService],
+  providers: [MessagingService,
+    {provide: APP_BASE_HREF, useValue: '/'}
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
