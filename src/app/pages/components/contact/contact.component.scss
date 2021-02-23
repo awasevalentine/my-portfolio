@@ -1,0 +1,208 @@
+/*this is for animation
+
+#animated_div
+{
+text-align:center;
+width:60px;
+ height:100px;
+background:#6699FF;
+ color:#ffffff;
+
+position:relative;
+font-weight:bold;
+ font-size:20px;
+ padding:10px;
+
+animation:animated_div 4s infinite;
+ -moz-animation:animated_div 4s infinite;
+ -webkit-animation:animated_div 4s infinite;
+ border-radius:5px;
+ -webkit-border-radius:5px;
+
+}
+
+ @keyframes animated_div
+ {
+ 0%{left:0px;}
+ 20% {left:50px; background-color: green;}
+ 40% {left:140px; background-color: red;}
+ 60% {left:280px; background-color: yellow;}
+80% {left:425px; background-color: blue;}
+ 100% {left:0px; background-color: pink;}
+
+
+}
+
+ @-webkit-keyframes animated_div
+ {
+ 0%{left:0px;}
+ 20% {left:50px; background-color: green; margin-top: 50px;}
+ 40% {left:140px; background-color: red;margin-top: 0px;}
+ 60% {left:280px; background-color: yellow;margin-top: 50px;}
+ 80% {left:425px; background-color: blue;margin-top: 0px;}
+ 100% {left:0px; background-color: pink;}
+
+}
+@-moz-keyframes animated_div
+ {
+ 0% {left:0px;}
+ 20% {left:50px; background-color: green;}
+ 40% {left:140px; background-color: red;}
+ 60% {left:280px; background-color: yellow;}
+ 80% {left:425px; background-color: blue;}
+ 100% {left:0px; background-color: pink;}
+}
+
+
+
+
+div.swapnil
+{
+ width: 20px;
+ height: 20px;
+
+margin: 20px auto;
+
+}
+div.swapnil div.raja img
+{
+
+width: 100px;
+
+height: 100px;
+ color: black;
+ padding: 10px;
+ border-radius: 5px;
+ margin-left: 0;
+-webkit-transition: 3s ease;
+ -moz-transition: 3s ease;
+ -o-transition: 3s ease;
+ -ms-transition: 3s ease;
+ transition: 3s ease;
+
+}
+div.swapnil:hover div.raja img
+ {
+ width: 240px;
+ height: 220px;
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ transform:rotate(360deg);
+
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  .containers{
+    width: 500px;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="500" ><defs><linearGradient id="grad" x2="100%" y2="100%"><stop offset="0%" stop-color="%23ef3" /><stop offset="100%" stop-color="%23add" /></linearGradient></defs><path d="M0 10 C30 28 38 0 64 10 L64 0 L0 0 Z"  fill="url(%23grad)"/></svg>'), 
+    linear-gradient(to bottom right, #de350b, #0065ff);
+    
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:column;
+    color:#fff;
+  }
+
+
+
+  svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .containerss {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .containero {
+    width: 500px;
+    height: 200px;
+    background:linear-gradient(to bottom right, #de350b, #0065ff);
+  }
+  svg {
+    width:100%;
+  }
+
+  */
+
+  .main-content-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 2em;
+  }
+
+a {
+  text-decoration: none;
+}
+
+.button-wrapper {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.form-control-lg {
+
+  border: solid 1px rgba(15, 15, 15, 0.808) !important;
+}
+
+//this for the display "message sent" after form is submitted
+
+.displayMessage{
+  text-align: center;
+  color: greenyellow;
+  padding-top: 20px;
+}

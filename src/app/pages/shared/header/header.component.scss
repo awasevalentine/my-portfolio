@@ -1,0 +1,48 @@
+:host {
+    width: 100%;
+}
+.container-fluid{
+    padding-top: 1em;
+}
+
+.pr-md-6{
+    padding-right: 15em;
+}
+
+.pl-md-6{
+    padding-left: 10em;
+}
+
+h2 {
+    border: solid 4px#141c3a;
+    padding: 3px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.nav-link{
+    color: #222;
+}
+
+ a:focus, a:hover{
+    color: blue;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+// this style sets the pading to 0 on media screen with max-width of 679px
+
+@media all and(max-width: 679px){
+    .pl-md-6{
+        padding-left: 0;
+    }
+    
+}
+

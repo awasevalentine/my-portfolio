@@ -1,0 +1,90 @@
+.technology-used {
+    background-color: #f7f7f7;
+    height: 100%;
+    width: 100%;
+}
+.tech-header {
+    padding-top: 10px;
+    padding-bottom: 25px !important;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.color-primary {
+    color: blue;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+a {
+    border: solid 3px blueviolet;
+    border-radius: 50px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+
+//over for the card images
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .42s ease-in-out;
+    -webkit-transition: .42s ease-in-out;
+    -moz-transition: .42s ease-in-out;
+    -o-transition: .42s ease-in-out;
+    background-color: #141c3a;
+    border-radius: 10px;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+
+@media all and(max-width: 679px){
+   
+    .img-fluid {
+        width: 80% !important;
+    }
+
+    .header-wrapper{
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .mt-6{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}

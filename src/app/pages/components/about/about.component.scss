@@ -1,0 +1,70 @@
+
+.first-content-wrapper {
+
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border-bottom: black;
+}
+
+
+.mt-6{
+    padding-top: 10em !important;
+}
+
+.paragraph-1{
+    margin: 10px;
+    font-size: 15px;
+}
+
+
+//Technology and Framework header
+
+.tech-header {
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 25px !important;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.img-fluid{
+    height: 100% !important;
+    width: 80% !important;
+    image-rendering: auto;
+    clip: auto;
+    background-clip: content-box;
+}
+
+
+.color-primary {
+    color: blue;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+
+
+// this is for media devices with maximum breakpoint of 679px
+
+@media all and(max-width: 679px){
+   
+    .img-fluid {
+        width: 80% !important;
+    }
+
+    .header-wrapper{
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .mt-6{
+        padding-top: 4px !important;
+        padding-bottom: 0 !important;
+    }
+}
