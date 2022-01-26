@@ -1,0 +1,142 @@
+<div class="portfolio-main-wrapper">
+  <h1 class="header">Portfolio</h1>
+  <hr>
+  <div class="portfolio-sub-wrapper">
+  <div class="row portfolio-task-manager-wrapper">
+    <!-- Task Management section -->
+      <div class="col-sm-12 col-md-5 task-manager-image">
+          <!-- <img src="../../../assets/Images/portfolio-images/task-manager.png" class="portfolio-images" alt="Appointment Manager"> -->
+      </div>
+      <div class="col-sm-12 col-md-5 task-manager-details">
+        <h2 class="task-manager-header">Appointment Manager</h2>
+        <p class="task-manager-description">
+          Apointment Manager is an app that helps you manage and keep track of your daily appointments and schedules.
+          Part of it features is it ability to set reminder and being able to notify the user when the set date for
+          appointment reaches, via email and also on the dashboard.
+        </p>
+        <div class="tech-used">
+          <ul>
+            <li>Angular</li>
+            <li>Nest Js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Angular Material</li>
+          </ul>
+        </div>
+        <div class="task-manager-link-section">
+          <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="">Visit Website</a>
+        </div>
+      </div>
+      <!-- End of Task management section -->
+      <!-- Loan request section -->
+      <div class="col-sm-12 col-md-5 loan-request-details">
+        <div class="sub-wrapper">
+        <h2 class="loan-request-header">Loan Request</h2>
+        <p class="loan-request-description">
+          An App that is specifically design for those with <span>House Rent</span>
+          issues. We help you secure and renew your accomodation, and you payback by installment
+        </p>
+        <div class="tech-used">
+          <ul>
+            <li>Angular</li>
+            <li>Nest Js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Angular Material</li>
+          </ul>
+        </div>
+        <div class="loan-request-link-section">
+          <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="">Visit Website</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-5 loan-request-image">
+      </div>
+      <!-- End of loan request section -->
+      <!-- Twitter section -->
+      <div class="col-sm-12 col-md-5 twitter-image">
+      </div>
+      <div class="col-sm-12 col-md-5 twitter-details">
+        <h2 class="twitter-header">Tweet</h2>
+        <p class="twitter-description">
+          Tweet is a replical of the twitter app that allows you to connect with friends and family,
+          send messages and as well receive updates.
+        </p>
+      <div class="tech-used">
+        <ul>
+          <li>Angular</li>
+          <li>Nest Js</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>Angular Material</li>
+        </ul>
+      </div>
+      <div class="twitter-link-section">
+        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="">Visit Website</a>
+      </div>
+    </div>
+    <!-- End of twitter section -->
+  </div>
+  <div class="view-more-portfolio">
+    <div class="view-more" *ngIf="show">
+      <p>Coming up soon</p>
+    </div>
+    <div class="btn">
+    <a class="view-more-btn" (click)="show  = !show">{{show ? 'Show Less': 'View More'}}</a>
+    </div>
+  </div>
+  </div>
+  <!-- Section for mobile display -->
+  <div class="row pt-3 portfolio-mobile-wrapper">
+    <div class="col-sm-12 col-md-3 col-lg-4 pb-3">
+        <div class="card w-100">
+            <div class="overlay">
+              <div class="overlay-text">
+                <h2>Appointment Manager</h2>
+                <p>
+                  An app that helps you manage and keep track of your daily appointments or schedules.
+                  Set reminders and being able to notify the user when the set date for
+                  appointment reaches, via email and also on the dashboard.
+                </p>
+                <a href="https://ng-task-managers.netlify.app" target="_blank">Visit Website</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-4 pb-3 ">
+            <div class="card w-100">
+              <div class="overlay">
+              <div class="overlay-text">
+                <h2>Tweet</h2>
+                <p>
+                  Tweet is a replical of the twitter app that allows you to connect with friends and family,
+                  send messages and as well receive updates.
+                </p>
+                <a href="https://ng-twitter.netlify.app" target="_blank">Visit Website</a>
+              </div>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-4 pb-3">
+            <div class="card w-100">
+              <div class="overlay">
+              <div class="overlay-text">
+                <h2>Loan Request</h2>
+                <p>
+                  An App that is specifically design for those with <span>House Rent</span>
+                  issues. We help you secure and renew your accomodation, and you payback by installment
+                </p>
+                <a href="https://ng-loan-app.netlify.app" target="_blank">Visit Website</a>
+              </div>
+              </div>
+            </div>
+    </div>
+
+</div>
+</div>

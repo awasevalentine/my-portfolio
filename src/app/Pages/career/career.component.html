@@ -1,0 +1,140 @@
+<div class="career-section-main-wrapper">
+  <h1 class="career-section-header">Where I've Worked</h1>
+  <hr>
+  <div class="career-listing large-screen">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+          <div class="card" data-aos="fade-right" data-oas-once="true" data-aos-duration="1000">
+            <h1 class="career-listing-header">
+              <span class="seperator">|</span>
+              <span class="career-job-title">Solution Implementer</span>
+              <span style="margin-right: 5px; font-weight: 700;">@</span>
+              <span class="career-organization">Huawei Technologies</span>
+            </h1>
+            <h3 class="career-date">
+              <span class="career-start-date">May 2021</span>
+              <span class="date-seperator"> - </span>
+              <span class="career-end-date">Present</span>
+            </h3>
+            <div class="career-details card-body">
+              <ul *ngFor="let jobDescrition of huaweiTechnologies">
+                <li>{{jobDescrition[0]}}</li>
+                <li>{{jobDescrition[1]}}</li>
+                <li>{{jobDescrition[2]}}</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="card payqart-solutions" data-aos="fade-left" data-oas-once="true" data-aos-duration="1000">
+          <h1 class="career-listing-header">
+            <span class="seperator">|</span>
+            <span class="career-job-title">Junior Fullstack Developer</span>
+            <span style="margin-right: 5px; font-weight: 700;">@</span>
+            <span class="career-organization">PayQart Solutions Limited</span>
+          </h1>
+          <h3 class="career-date payqart">
+            <span class="career-start-date">May 2021</span>
+            <span class="date-seperator"> - </span>
+            <span class="career-end-date">Present</span>
+          </h3>
+          <div class="career-details card-body">
+            <ul *ngFor="let jobDescrition of payQart">
+              <li>{{jobDescrition[0]}}</li>
+              <li>{{jobDescrition[1]}}</li>
+              <li>{{jobDescrition[2]}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="card spring-ict" data-aos="fade-up" data-oas-once="true" data-aos-duration="1000">
+          <h1 class="career-listing-header">
+            <span class="seperator">|</span>
+            <span class="career-job-title">Front-End Intern (NYSC)</span>
+            <span style="margin-right: 5px; font-weight: 700;">@</span>
+            <span class="career-organization">Spring ICT Solutions Service</span>
+          </h1>
+          <h3 class="career-date spring-ICT">
+            <span class="career-start-date">May 2021</span>
+            <span class="date-seperator"> - </span>
+            <span class="career-end-date">Present</span>
+          </h3>
+          <div class="career-details card-body">
+            <ul *ngFor="let jobDescrition of payQart">
+              <li>{{jobDescrition[0]}}</li>
+              <li>{{jobDescrition[1]}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- For Mobile View -->
+  <div class="career-listing-for-mobile d-md-none" style="background-color: #0a192f; color: #e6f1ff;">
+    <mat-tab-group animationDuration="2000ms" color="#e6f1ff">
+      <mat-tab label="Huawei">
+        <div class="huawei_wrapper">
+        <h1>
+        <span class="career-job-title">Solution Implementer</span>
+        <span style="margin-right: 5px; font-weight: 700;">@</span>
+        <span class="career-organization">Huawei Technologies</span>
+      </h1>
+      <h3 class="career-date">
+        <span class="career-start-date">May 2021</span>
+        <span class="date-seperator"> - </span>
+        <span class="career-end-date">Present</span>
+      </h3>
+      <div class="card-body" style="color: black !important;">
+        <ul *ngFor="let jobDescrition of huaweiTechnologies">
+          <li>{{jobDescrition[0]}}</li>
+          <li>{{jobDescrition[1]}}</li>
+          <li>{{jobDescrition[2]}}</li>
+        </ul>
+      </div>
+    </div>
+      </mat-tab>
+      <mat-tab label="PayQart">
+        <div class="payqart-wrapper">
+          <h1 class="career-listing-header">
+            <span class="career-job-title">Junior Fullstack Developer</span>
+            <span style="margin-right: 5px; font-weight: 700;">@</span>
+            <span class="career-organization">PayQart</span>
+          </h1>
+          <h3 class="career-date payqart">
+            <span class="career-start-date">May 2021</span>
+            <span class="date-seperator"> - </span>
+            <span class="career-end-date">Present</span>
+          </h3>
+          <div class="career-details card-body">
+            <ul *ngFor="let jobDescrition of payQart">
+              <li>{{jobDescrition[0]}}</li>
+              <li>{{jobDescrition[1]}}</li>
+              <li>{{jobDescrition[2]}}</li>
+            </ul>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="spring-ICT">
+        <div class="spring-ict-wrapper">
+          <h1 class="career-listing-header">
+            <span class="career-job-title">Front-End Intern (NYSC)</span>
+            <span style="margin-right: 5px; font-weight: 700;">@</span>
+            <span class="career-organization">Spring ICT</span>
+          </h1>
+          <h3 class="career-date spring-ICT">
+            <span class="career-start-date">May 2021</span>
+            <span class="date-seperator"> - </span>
+            <span class="career-end-date">Present</span>
+          </h3>
+          <div class="career-details card-body">
+            <ul *ngFor="let jobDescrition of payQart">
+              <li>{{jobDescrition[0]}}</li>
+              <li>{{jobDescrition[1]}}</li>
+            </ul>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+

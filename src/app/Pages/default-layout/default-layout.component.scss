@@ -1,0 +1,166 @@
+:host {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.default-layer-main {
+  background-color: #faeee7bd;
+}
+
+.default-second-layer-div-wrapper {
+  height: 70vh;
+  background-image: linear-gradient(to right, rgba(50, 82, 136, 0.9),
+                  rgba(50, 82, 136, 0.9)  ),
+                    url('../../../assets/Images/image-header.jpg');
+
+  background-position: top;
+  clip-path: polygon(0 0, 100% 1%, 100% 81%, 0% 100%);
+  background-size: contain;
+}
+
+.default-second-layer-content {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.default-second-layer-content > p {
+  width: 70%;
+  margin-top: 1.73rem;
+  letter-spacing: .05rem;
+  line-height: 1.6;
+}
+
+.default-second-layer-header-main {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: .25rem;
+  line-height: 2.7rem;
+  animation: default-second-layer-header-main 2s ;
+}
+
+.default-second-layer-header-sub {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .15rem;
+  // line-height: 2.7rem;
+  animation: default-second-layer-header-sub 2s ;
+
+}
+
+.default-second-layer-btn {
+  position: absolute;
+  left: 25%;
+  padding: 4px 10px 4px 10px;
+  border-radius: 200px;
+  margin-top: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  background-color: #D96098;
+
+  // animation: default-second-layer-btn 2s ;
+
+}
+
+.default-second-layer-btn:hover {
+  animation: default-second-layer-btn-hover 2s;
+}
+
+
+
+@keyframes default-second-layer-header-main {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  80% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes default-second-layer-header-sub {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+@keyframes default-second-layer-btn{
+
+  0% {
+    opacity: 0;
+    transform: translateY(50px) ;
+  }
+
+  80% {
+    // transform: translateY(px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes default-second-layer-btn-hover{
+
+  0% {
+    opacity: 1;
+    transform: scale(1.2) ;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+
+@media screen and (max-width: "659px") {
+  .default-second-layer-content {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+
+  .default-second-layer-content > p {
+    width: 85vw;
+    margin-top: 1.73rem;
+    letter-spacing: .05rem;
+    line-height: 1.6;
+  }
+
+  }
+
+

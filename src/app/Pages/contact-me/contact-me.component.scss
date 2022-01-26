@@ -1,0 +1,112 @@
+:host{
+  width: 100%;
+}
+
+.contact-section-wrapper {
+  background-color: #fff;
+  height: 700px;
+}
+
+.get-in-touch {
+  text-align: center;
+}
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #D96098;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+
+.contact-info {
+  // margin: 4rem 4rem 4rem 4rem;
+  margin: 3rem auto;
+  width: 50%;
+  text-align: center;
+}
+
+.contact-info a {
+  text-align: center;
+  // margin-left: 2.6rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  // font-weight: 500;
+  color: #000;
+}
+
+.contact-info span {
+  font-weight: 900;
+  // fon
+}
+
+td {
+  padding-right: 4rem;
+}
+
+.send-message {
+  margin-left: 2.6rem;
+  color: #D96098 !important;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  // col
+}
+
+.contact-info a:nth-child(1) {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fa {
+  padding-right: 8px;
+  font-size: 25px;
+}
+
+
+.social-media-wrapper {
+  margin: 4rem 0px 1rem 0px;
+  font-weight: 600;
+}
+
+
+
+
+
+// Media Query section
+
+@media screen and (max-width: "659px") {
+
+  .header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #D96098;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px !important;
+    border-radius: 8px;
+    color: #000;
+  }
+
+  .send-message {
+    margin-left: 2.6rem;
+    color: #D96098 !important;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}

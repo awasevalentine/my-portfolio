@@ -1,0 +1,184 @@
+:host {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;
+  margin-top: -7px;
+  font-weight: 700;
+  height: 3px;
+  width: 70px;
+  background: black !important;
+  border: 2px solid black;
+  opacity: 1;
+}
+
+ul {
+  margin: 1.5rem 0px;
+}
+
+li {
+  margin-top: 10px;
+  color: #FAEEE7;
+  // color: #000;
+
+}
+
+
+
+.career-section-main-wrapper {
+  // height: 500px;
+  // background-image: linear-gradient(to right, rgba(50, 82, 136, 0.9), rgba(217, 96, 152, 0.8));
+  // clip-path: polygon(0 0, 63% 0, 50% 100%, 0% 100%);
+}
+
+.career-section-header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #D96098;
+  margin-top: 8rem !important;
+}
+
+.career-listing {
+  margin: 3.2rem;
+  // font-size: 1.7rem;
+  font-weight: normal;
+
+}
+
+.career-listing-header {
+  margin-left: 20px;
+  font-size: 1.3rem;
+}
+
+.career-date {
+  position: absolute;
+  left: 45%;
+  top: 2.9rem;
+  font-size: 1rem;
+}
+
+.payqart {
+  position: absolute;
+  left: 53%;
+  top: 2.9rem;
+  font-size: 1rem;
+}
+
+.spring-ICT {
+  position: absolute;
+  left: 50%;
+  top: 2.9rem;
+  font-size: 1rem;
+}
+
+.date-seperator {
+  margin: 0px 5px;
+}
+
+.card {
+  height: 450px;
+  width: 100%;
+  background-color: #24A19C;
+  color: #FAEEE7;
+}
+.seperator {
+  font-size: 40px;
+  color: #D96098;
+  font-weight: 1200;
+  margin-right: 1rem;
+}
+
+.career-organization {
+  font-weight: 700;
+
+}
+
+.career-job-title {
+margin-right: .5rem;
+font-size: 1.1rem;
+}
+
+
+
+/* Section for media query*/
+
+
+//small screens
+
+@media screen and (max-width: "659px") {
+
+  .career-listing-for-mobile {
+    margin-top: 5rem;
+  }
+  .mat-tab-label {
+    color: #e6f1ff !important;
+    border-bottom: 2px solid ;
+  }
+
+  .mat-tab-group, li {
+    color: #8892b0 !important;
+
+  }
+
+  .mat-tab-label-active {
+    color: #D96098;
+    border-bottom: 2px solid #D96098;
+
+  }
+
+  .huawei_wrapper,.payqart-wrapper, .spring-ict-wrapper {
+    // text-align: center;
+    margin: 1.5rem 1rem 3rem 1.5rem;
+  }
+  .career-job-title {
+    color: #ccd6f6;
+    font-size: 20px;
+
+  }
+
+  .career-organization, .huawei_wrapper span:nth-child(2),
+  .payqart-wrapper span:nth-child(2), .spring-ict-wrapper span:nth-child(2)
+   {
+    color: #D96098;
+    font-size: 20px;
+  }
+
+  .career-date {
+    position: absolute;
+    left: 51%;
+    top: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .payqart-wrapper > .payqart {
+    position: absolute;
+    left: 60%;
+    top: 3rem;
+    font-size: 1rem;
+  }
+
+  .spring-ict-wrapper > .spring-ICT {
+    position: absolute;
+    left: 57%;
+    top: 3rem;
+    font-size: 1rem;
+  }
+
+
+  .career-listing {
+    margin: 2rem;
+    // font-size: 1.7rem;
+    font-weight: normal;
+
+  }
+
+  .large-screen {
+    display: none;
+  }
+
+}

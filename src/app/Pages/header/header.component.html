@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-md-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="[ '/' ]"><h1 class="navbar-brand-wrapper">VALENTINE</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-order-list-wrapper">
+            <li class="nav-item">
+              <a  class="nav-link active" aria-current="page"  [routerLink]="[ '/' ]" fragment="about-section">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[ '/' ]" fragment="career-section">CAREER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[ '/' ]" fragment="portfolio-section">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link float-md-end" [routerLink]="[ '/' ]" fragment="contact-section">CONTACT</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+</nav>

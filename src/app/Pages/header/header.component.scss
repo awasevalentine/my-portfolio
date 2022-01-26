@@ -1,0 +1,64 @@
+
+nav {
+  width: 100%;
+  background-color: #FAEEE7 !important;
+}
+
+a{
+  color: #D96098 !important;
+  // color: #8946A6 !important;
+
+}
+
+a:hover{
+  color: black !important;
+  animation: navbar-achor-shake 2s;
+}
+
+
+.navbar-brand > h1 {
+  margin-left: 13rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.navbar-order-list-wrapper {
+  position: absolute;
+  left: 60%;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+// .navbar-item {
+//   color: white !important;
+// }
+
+
+
+@keyframes navbar-achor-shake {
+
+  0% {
+    opacity: 0;
+    transform: scale(10px, 10px);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: scale(0.7);
+  }
+
+}
+
+
+
+/* Section for media query*/
+
+
+//small screens
+
+@media screen and (max-width: "659px") {
+  .navbar-brand {
+    margin-left: -13% !important;
+  }
+
+}

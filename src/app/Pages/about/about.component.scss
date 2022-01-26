@@ -1,0 +1,160 @@
+:host {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  position: absolute;
+  left: 50%;
+  // top: 50%;
+  margin-top: -30px;
+  margin-left: -35px;
+  font-weight: 700;
+  height: 3px;
+  width: 70px;
+  background: black !important;
+  border: 2px solid black;
+  opacity: 1;
+}
+
+
+.about-container-wrapper {
+
+}
+
+.header {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #D96098;
+}
+
+.image-wrapper {
+  width: 15%;
+}
+
+
+.about-me-content {
+  width: 40%;
+  margin: 1rem auto;
+  transform: translate(5%, 10%);
+}
+
+.content-wrapper {
+  // font-family: 'Merriweather', serif;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(23, 14, 0, 1);
+  line-height: 1.6;
+  word-spacing: 4px;
+}
+
+.content-technology-wrapper {
+  margin-bottom: 5rem;
+}
+
+.content-technology-wrapper > p {
+  font-weight: 700;
+}
+
+.technology-listing {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 200px));
+  gap: 0px 10px;
+  grid-gap: 0px 10px;
+}
+
+
+.technology-listing > ul {
+  margin-left: -30px!important;
+  margin-bottom: 0px !important;
+}
+
+.technology-listing > ul li::before {
+  content: "▹";
+  display: inline-block !important;
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.technology-listing > ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  list-style: none;
+}
+
+
+
+
+
+
+/* Section for media query*/
+
+
+//small screens
+
+@media screen and (max-width: "659px") {
+
+.about-me-content {
+  width: 100%;
+  margin: .5rem;
+  // transform: translate(5%, 10%);
+}
+
+.content-technology-wrapper {
+  margin-bottom: 5rem;
+}
+
+.content-technology-wrapper > p {
+  font-weight: 700;
+  width: 90vw;
+}
+
+.content-wrapper {
+  width: 90%;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(23, 14, 0, 1);
+  line-height: 1.6;
+  word-spacing: 4px;
+}
+
+.technology-listing {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 60px));
+  gap: 0px 10px;
+  grid-gap: 0px 10px;
+}
+
+
+.technology-listing > ul {
+  margin-left: -20px!important;
+  margin-bottom: 0px !important;
+}
+
+.technology-listing > ul li::before {
+  content: "▹";
+  display: inline-block !important;
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.technology-listing > ul li {
+  position: relative;
+  margin-bottom: 10px;
+  color: #000 !important;
+  // font-family: var(--font-mono);
+  font-size: .8rem;
+  list-style: none;
+}
+}

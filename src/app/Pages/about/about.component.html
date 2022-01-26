@@ -1,0 +1,29 @@
+<div class="about-container-wrapper">
+  <h1 class="header">About</h1>
+  <hr>
+  <div class="about-image-wrapper">
+    <img class="image-wrapper img-fluid mx-auto d-block" src="../../../assets/Images/About me/profile-image.png" alt="Valentine profile pix" srcset="../../../assets/Images/About me/profile-image.png" >
+  </div>
+  <div class="about-me-content">
+    <p class="content-wrapper">
+      Hello! My name is Valentine, and I'm a full-stack web developer
+      who loves building API's, sophisticated and appealing user interface front-end application
+      that solves enterprise issues.
+      <br>
+      Over the course of my career, I have successfully build different front-end applications and API's
+      for different organization such as Huawei Technologies, PayQart Solutions Limited and I've also developed
+      personal projects.
+    </p>
+    <div class="content-technology-wrapper">
+      <p>Below are a few Technologies I've been working with recently: </p>
+      <div class="technology-listing">
+        <ul *ngFor="let item of technologiesUsed">
+          <li  >
+            {{item}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

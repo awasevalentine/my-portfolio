@@ -1,0 +1,257 @@
+hr {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -7px;
+  font-weight: 700;
+  height: 3px;
+  width: 70px;
+  background: black !important;
+  border: 2px solid black;
+  opacity: 1;
+}
+
+.portfolio-task-manager-wrapper{
+  margin-top: 4rem;
+}
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #D96098;
+  margin-top: 10rem;
+}
+
+
+.task-manager-image, .task-manager-details, .twitter-details{
+  margin: 2rem 0px 0px 4rem ;
+  height: 300px;
+}
+
+.task-manager-image {
+  background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
+                   rgba(0, 0, 0, 0.8)),
+                   url("../../../assets/Images/portfolio-images/task-manager.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+
+}
+
+.tech-used ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 2rem .5rem .5rem .5rem;
+  font-size: .8rem;
+}
+
+.tech-used ul > li:first-child {
+  margin-left: -2rem;
+}
+
+.portfolio-images {
+  width: 100%;
+  height: 90%;
+}
+
+.task-manager-header, .loan-request-header, .twitter-header {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.task-manager-description {
+  width: 70%;
+  line-height: 2;
+}
+
+
+.task-manager-link-section, .twitter-link-section {
+  float: right;
+  width: 70%;
+}
+.task-manager-link-section a, .loan-request-link-section a,
+.twitter-link-section a {
+  color: #DD4A48;
+}
+
+.task-manager-link-section a:last-child, .loan-request-link-section a:last-child,
+.twitter-link-section a:last-child {
+  margin-left: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.3px solid #000;
+  border-radius: 50px;
+  padding: 7px;
+}
+.fa-github {
+  font-size: 1.5rem;
+}
+
+
+.loan-request-image, .loan-request-details,.twitter-image,.twitter-details{
+  margin: 10rem 0px 0px 4rem ;
+  height: 300px;
+}
+
+.sub-wrapper {
+  margin-left: 6rem;
+}
+
+.loan-request-image {
+  background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
+  rgba(0, 0, 0, 0.8)),
+  url("../../../assets/Images/portfolio-images/loan-request.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 6px;
+}
+
+.loan-request-link-section {
+
+}
+
+/* Twitter Section */
+
+.twitter-image {
+  background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
+  rgba(0, 0, 0, 0.8)),
+  url("../../../assets/Images/portfolio-images/twitter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+.twitter-description {
+  width: 70%;
+  line-height: 2;
+}
+
+.twitter-link-section {
+
+}
+
+.view-more-portfolio {
+  height: 100%;
+}
+
+
+.view-more{
+  margin-top: 9rem;
+}
+
+.view-more p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+
+  animation: blinker 1s linear infinite;
+}
+.btn {
+  margin: 6rem 4rem 0px 50%;
+}
+
+.view-more-btn {
+  padding: 7px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #DD4A48;
+}
+
+
+//For hiding the mobile section div when the viewport is more than small
+.portfolio-mobile-wrapper {
+  display: none;
+}
+
+
+
+
+// Temporal for making the view more section blink
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+//over for the card images
+
+
+
+
+
+//Media query section
+
+@media screen and (max-width: "659px") {
+.header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #D96098;
+    margin-top: 6.5rem;
+  }
+
+.portfolio-sub-wrapper {
+  display: none;
+}
+//For hiding the mobile section div when the viewport is more than small
+.portfolio-mobile-wrapper {
+  display: block;
+  margin-top: 3rem ;
+}
+
+.card {
+  height: 250px !important;
+  background-color: #24A19c;
+  color: #FAEEE7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  // text-align: center;
+  opacity: 0.7;
+  transition: .42s ease-in-out;
+  -webkit-transition: .42s ease-in-out;
+  -moz-transition: .42s ease-in-out;
+  -o-transition: .42s ease-in-out;
+  background-color: #141c3a;
+  border-radius: 10px;
+}
+
+.overlay-text {
+  width: 80%;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  margin: 2rem 0px 0px 2rem;
+}
+
+.overlay-text h2 {
+  color: #DD4A48;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overlay-text a {
+  text-decoration: none;
+  color: #DD4A48;
+  font-weight: 700;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 7px;
+}
+}
