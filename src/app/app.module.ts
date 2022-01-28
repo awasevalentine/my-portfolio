@@ -13,6 +13,7 @@ import { ContactMeComponent } from './Pages/contact-me/contact-me.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatTabsModule
   ],
-  providers: [CareerJobDescriptionService],
+  providers: [CareerJobDescriptionService,
+    {
+      provide: APP_BASE_HREF, useValue: '/'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
