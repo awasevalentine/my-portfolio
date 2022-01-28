@@ -33,7 +33,6 @@ a:hover{
 // }
 
 
-
 @keyframes navbar-achor-shake {
 
   0% {
@@ -54,11 +53,28 @@ a:hover{
 /* Section for media query*/
 
 
+//For smaller screen
+
+@media screen and (max-width: "449px") {
+  .navbar-brand > h1 {
+    margin-left: 100% !important;
+  }
+
+  #navbarNav {
+    text-align: center;
+  }
+
+}
+
 //small screens
 
 @media screen and (max-width: "659px") {
   .navbar-brand {
     margin-left: -13% !important;
+  }
+
+  #navbarNav {
+    text-align: center;
   }
 
 }

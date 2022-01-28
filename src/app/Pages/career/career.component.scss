@@ -3,6 +3,7 @@
   font-family: 'Lato', sans-serif;
 }
 
+
 hr {
   position: absolute;
   left: 50%;
@@ -22,8 +23,9 @@ ul {
 
 li {
   margin-top: 10px;
-  color: #FAEEE7;
+  color: #8892b0;
   // color: #000;
+
 
 }
 
@@ -40,11 +42,11 @@ li {
   font-weight: 700;
   text-align: center;
   color: #D96098;
-  margin-top: 8rem !important;
+  padding-top: 9rem;
 }
 
 .career-listing {
-  margin: 3.2rem;
+  padding: 5rem 3.2rem;
   // font-size: 1.7rem;
   font-weight: normal;
 
@@ -53,6 +55,7 @@ li {
 .career-listing-header {
   margin-left: 20px;
   font-size: 1.3rem;
+  color: #D96098;
 }
 
 .career-date {
@@ -60,6 +63,7 @@ li {
   left: 45%;
   top: 2.9rem;
   font-size: 1rem;
+  color: #8892b0;
 }
 
 .payqart {
@@ -101,15 +105,43 @@ li {
 .career-job-title {
 margin-right: .5rem;
 font-size: 1.1rem;
+color: #ccd6f6;
 }
 
+
+
+.card{
+  background-color: #141c3a;
+}
 
 
 /* Section for media query*/
 
 
-//small screens
+//Smaller screen
+@media screen and (max-width: "449px") {
 
+  /* Section for aligning job title, organization name and date */
+  .career-job-title {
+      display: block !important;
+  }
+
+  .at-wrapper,.career-organization {
+    display: inline;
+  }
+
+  .career-date {
+    left: 11% !important;
+    top: 4.5rem !important;
+    display: block;
+    font-size: 1rem;
+  }
+  /*End */
+
+}
+
+
+//small screens
 @media screen and (max-width: "659px") {
 
   .career-listing-for-mobile {

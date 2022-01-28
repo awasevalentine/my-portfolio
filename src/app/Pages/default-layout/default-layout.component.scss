@@ -145,6 +145,38 @@
 
 
 
+
+
+//For smaller screen
+
+@media screen and (max-width: "449px") {
+
+  .default-second-layer-div-wrapper {
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(50, 82, 136, 0.9),
+                    rgba(50, 82, 136, 0.9)  ),
+                      url('../../../assets/Images/image-header.jpg');
+
+    background-position: top;
+    clip-path: polygon(0 0, 100% 1%, 100% 81%, 0% 100%);
+    background-size: contain;
+  }
+
+
+  .default-second-layer-header-main {
+    margin-top: 10rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    line-height: 2.7rem;
+    animation: default-second-layer-header-main 2s ;
+  }
+}
+
+
+
+//For small screen
+
 @media screen and (max-width: "659px") {
   .default-second-layer-content {
     position: absolute;

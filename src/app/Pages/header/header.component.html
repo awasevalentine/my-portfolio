@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-md-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-md-top">
     <div class="container-fluid">
       <a class="navbar-brand" [routerLink]="[ '/' ]"><h1 class="navbar-brand-wrapper">VALENTINE</h1></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
+      <div class="collapse navbar-collapse" id="navbarToggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-order-list-wrapper">
             <li class="nav-item">
               <a  class="nav-link active" aria-current="page"  [routerLink]="[ '/' ]" fragment="about-section">ABOUT</a>
@@ -21,4 +21,20 @@
           </ul>
       </div>
     </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-md-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="[ '/' ]"><h1 class="navbar-brand-wrapper">VALENTINE</h1></a>
+      <i class="navbar-toggler navbar-toggle collapsed" type="button" (click)="isCollapsed = !isCollapsed" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span [ngClass]="isCollapsed ? 'fa fa-bars' : 'fa fa-times'"></span>
+        </i>
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav" [ngClass]="{collapse: isCollapsed}">
+      <a  class="nav-link active" aria-current="page"  [routerLink]="[ '/' ]" fragment="about-section">ABOUT</a>
+      <a class="nav-link" [routerLink]="[ '/' ]" fragment="career-section">CAREER</a>
+      <a class="nav-link" [routerLink]="[ '/' ]" fragment="portfolio-section">PORTFOLIO</a>
+      <a class="nav-link float-md-end" [routerLink]="[ '/' ]" fragment="contact-section">CONTACT</a>
+    </div>
+  </div>
 </nav>
+

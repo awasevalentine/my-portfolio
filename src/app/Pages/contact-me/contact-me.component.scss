@@ -4,7 +4,7 @@
 
 .contact-section-wrapper {
   background-color: #fff;
-  height: 700px;
+  height: 600px;
 }
 
 .get-in-touch {
@@ -22,29 +22,26 @@
 
 .contact-info {
   // margin: 4rem 4rem 4rem 4rem;
-  margin: 3rem auto;
-  width: 50%;
+  margin: 3rem 0px auto auto;
+  // width: 50%;
   text-align: center;
 }
 
 .contact-info a {
   text-align: center;
-  // margin-left: 2.6rem;
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
-  // font-weight: 500;
   color: #000;
 }
 
 .contact-info span {
   font-weight: 900;
-  // fon
 }
 
-td {
-  padding-right: 4rem;
-}
+// td {
+//   padding-right: 4rem;
+// }
 
 .send-message {
   margin-left: 2.6rem;
@@ -79,6 +76,25 @@ td {
 
 
 // Media Query section
+
+
+//Smaller screen
+@media screen and (max-width: "449px") {
+.contact-info {
+  width: 100vw;
+}
+  .send-message {
+    // margin-left: 2.6rem;
+    color: #D96098 !important;
+    text-decoration: none;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
+
 
 @media screen and (max-width: "659px") {
 
