@@ -37,13 +37,14 @@ hr {
 
 .about-me-content {
   width: 40%;
-  margin: 1rem auto;
+  margin: .5rem auto;
   transform: translate(5%, 10%);
 }
 
 .content-wrapper {
   // font-family: 'Merriweather', serif;
   padding-bottom: 3rem;
+  margin-top: -25px;
   font-size: 1rem;
   font-weight: normal;
   color: rgba(23, 14, 0, 1);
@@ -123,6 +124,7 @@ hr {
 .content-wrapper {
   width: 90%;
   padding-bottom: 3rem;
+  margin-top: -50px;
   font-size: 1rem;
   font-weight: normal;
   color: rgba(23, 14, 0, 1);
