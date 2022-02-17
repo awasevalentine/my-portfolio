@@ -182,12 +182,11 @@
 
 
 //For small screen
-
 @media screen and (max-width: "659px") {
   .default-second-layer-content {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
     color: #fff;
   }
@@ -201,4 +200,28 @@
 
   }
 
+
+  // For meduim screens
+  @media screen and (min-width: '660px') and (max-width: '1250px') {
+    .default-second-layer-div-wrapper {
+      height: 85vh;
+      background-image: linear-gradient(to right, rgba(50, 82, 136, 0.9),
+                      rgba(50, 82, 136, 0.9)  ),
+                        url('../../../assets/Images/image-header.jpg');
+
+      background-position: top;
+      clip-path: polygon(0 0, 100% 1%, 100% 81%, 0% 100%);
+      background-size: contain;
+    }
+
+    .default-second-layer-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      padding-bottom: 6rem;
+    }
+
+  }
 
