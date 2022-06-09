@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  public technologiesUsed = ['JavaScript', 'Angular', 'HTML/CSS', 'NodeJs', 'NestJs',
+  public technologiesUsed = ['JavaScript', 'Angular','React', 'Redux', 'HTML/CSS', 'NodeJs', 'NestJs',
                              'Express JS', 'MYSQL', 'MongoDb', 'TypeScript',
-                             'Bootstrap', 'Angular Material', 'Python',
+                             'Bootstrap', 'Angular Material','Chakra UI', 'Python',
                             ]
   constructor() { }
 
