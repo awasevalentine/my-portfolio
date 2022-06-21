@@ -1,19 +1,14 @@
-hr {
+.portfolio-hr {
   position: absolute;
-  left: 50%;
-  margin-left: -40px;
-  margin-top: -7px;
+  margin-top: -5px;
   font-weight: 700;
   height: 3px;
-  width: 70px;
+  width: 100%;
   background: black !important;
   border: 2px solid black;
   opacity: 1;
 }
 
-.portfolio-task-manager-wrapper{
-  margin-top: 4rem;
-}
 .header {
   font-size: 2rem;
   font-weight: 700;
@@ -22,82 +17,142 @@ hr {
   margin-top: 10rem;
 }
 
-
-.task-manager-image, .task-manager-details, .twitter-details{
-  margin: 2rem 0px 0px 4rem ;
-  height: 300px;
+.portfolio-task-manager-wrapper{
+  margin-top: -6rem !important;
 }
 
-.task-manager-image {
+
+
+/*Global Section.*/
+
+//Section for all h2 headers
+        .react-auth-header, .loan-request-header,.todo-header, .twitter-header {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+//Section for Links
+          .react-auth-link-section,
+          .todo-link-section,
+          .twitter-link-section
+          {
+            float: right;
+            width: 70%;
+          }
+          .react-auth-link-section a,
+          .loan-request-link-section a,
+          .todo-link-section a,
+          .twitter-link-section a
+          {
+            color: #DD4A48;
+          }
+
+          .react-auth-link-section a:last-child,
+          .loan-request-link-section a:last-child,
+          .todo-link-section a:last-child,
+          .twitter-link-section a:last-child
+          {
+            margin-left: 1.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1.3px solid #000;
+            border-radius: 50px;
+            padding: 7px;
+          }
+
+          .react-auth-link-section a:last-child:hover,
+          .loan-request-link-section a:last-child:hover,
+          .todo-link-section a:last-child:hover,
+          .twitter-link-section a:last-child:hover
+          {
+            margin-left: 1.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1.3px solid #000;
+            border-radius: 50px;
+            padding: 7px;
+            box-shadow: 0 0 5px 5px #D96098;
+            transition: box-shadow .6s ease-in-out;
+          }
+          .fa-github {
+            font-size: 1.5rem;
+          }
+
+          .view-more-btn:hover{
+            box-shadow: 0 0 5px 5px #D96098;
+          }
+
+          .fa-github:hover{
+            box-shadow: 0 0 5px 5px #D96098;
+            border-radius: 50px;
+            background-color: #000;
+            transition: box-shadow,background-color .6s ease-in-out ;
+          }
+
+
+
+//Section for setting image heights and margins
+        .react-auth-image, .loan-request-image, .todo-image, .twitter-image,
+        .react-auth-details, .loan-request-details, .todo-details, .twitter-details
+        {
+          margin: 10rem 0px 0px 4rem ;
+          height: 300px;
+        }
+
+//Section for description
+        .react-auth-description,
+        .loan-request-description,
+        .todo-description,
+        .todo-description,
+        .twitter-description
+        {
+          width: 70%;
+          line-height: 2;
+        }
+
+
+//Section for Technologies Used
+        .tech-used ul > li {
+          display: inline-block;
+          list-style: none;
+          margin: 2rem .5rem .5rem .5rem;
+          font-size: .8rem;
+        }
+
+        .tech-used ul > li:first-child {
+          margin-left: -2rem;
+        }
+//End of sections for links
+/*End of global sections*/
+
+
+/*Section for react Authentication app */
+.react-auth-wrapper{
+  display: inline-flex;
+  margin-top: 1rem!important;
+}
+.react-auth-image {
   background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
                    rgba(0, 0, 0, 0)),
-                   url("../../../assets/Images/portfolio-images/react_auth.png");
+                   url("../../../assets/Images/portfolio-images/react-auth.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
+  // border: 2px solid red;
+box-shadow: 0 0 5px 5px #D96098;
 
 }
 
-.tech-used ul > li {
-  display: inline-block;
-  list-style: none;
-  margin: 2rem .5rem .5rem .5rem;
-  font-size: .8rem;
-}
-
-.tech-used ul > li:first-child {
-  margin-left: -2rem;
-}
-
-.portfolio-images {
-  width: 100%;
-  height: 90%;
-}
-
-.task-manager-header, .loan-request-header, .twitter-header {
-  font-size: 2rem;
-  font-weight: 700;
-
-}
-.task-manager-description {
-  width: 70%;
-  line-height: 2;
-}
+/* End of React Auth Section*/
 
 
-.task-manager-link-section, .twitter-link-section {
-  float: right;
-  width: 70%;
-}
-.task-manager-link-section a, .loan-request-link-section a,
-.twitter-link-section a {
-  color: #DD4A48;
-}
-
-.task-manager-link-section a:last-child, .loan-request-link-section a:last-child,
-.twitter-link-section a:last-child {
-  margin-left: 1.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1.3px solid #000;
-  border-radius: 50px;
-  padding: 7px;
-}
-.fa-github {
-  font-size: 1.5rem;
-}
 
 
-.loan-request-image, .loan-request-details,.twitter-image,.twitter-details{
-  margin: 10rem 0px 0px 4rem ;
-  height: 300px;
+/*Loan Request Section*/
+.loan-request-wrapper {
+  display: inline-flex;
 }
-
-.sub-wrapper {
-  margin-left: 6rem;
-}
-
 .loan-request-image {
   background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
   rgba(0, 0, 0, 0.8)),
@@ -106,14 +161,40 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 border-radius: 6px;
-}
-
-.loan-request-link-section {
+box-shadow: 0 0 5px 5px #D96098;
 
 }
+/*End of Loan request section*/
+
+
+
+
+/*Task Manager Section**/
+.todo-wrapper{
+  display: inline-flex;
+}
+.todo-image {
+  background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
+  rgba(0, 0, 0, 0)),
+  url("../../../assets/Images/portfolio-images/task-manager.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  border: 2px solid red;
+  box-shadow: 0 0 5px 5px #D96098;
+
+}
+/*End of todo section */
+
+
+
+
 
 /* Twitter Section */
-
+.twitter-section-wrapper{
+  display: inline-flex;
+}
 .twitter-image {
   background-image: linear-gradient(to right, rgba(50, 82, 136, 0.3),
   rgba(0, 0, 0, 0.8)),
@@ -122,16 +203,12 @@ border-radius: 6px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 6px;
-}
-
-.twitter-description {
-  width: 70%;
-  line-height: 2;
-}
-
-.twitter-link-section {
+  box-shadow: 0 0 5px 5px #D96098;
 
 }
+
+/*End of Twitter Section*/
+
 
 .view-more-portfolio {
   height: 100%;
@@ -154,7 +231,7 @@ border-radius: 6px;
 
 }
 .btn {
-  margin: 6rem 4rem 0px 50%;
+  margin: 6rem 4rem 10px 50%;
 }
 
 .view-more-btn {

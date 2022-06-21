@@ -1,15 +1,16 @@
 <div class="portfolio-main-wrapper">
   <h1 class="header">Portfolio</h1>
-  <hr>
+  <hr class="portfolio-hr">
   <div class="portfolio-sub-wrapper">
   <div class="row portfolio-task-manager-wrapper">
     <!-- React Authentication section -->
-      <div class="col-sm-12 col-md-5 task-manager-image">
+    <div class="react-auth-wrapper">
+      <div class="col-sm-12 col-md-5 react-auth-image" data-aos="slide-right" data-aos-duration="1000">
           <!-- <img src="../../../assets/Images/portfolio-images/task-manager.png" class="portfolio-images" alt="Appointment Manager"> -->
       </div>
-      <div class="col-sm-12 col-md-5 task-manager-details">
-        <h2 class="task-manager-header">React Authentication</h2>
-        <p class="task-manager-description">
+      <div class="col-sm-12 col-md-5 react-auth-details" data-aos="slide-left" data-aos-duration="1000">
+        <h2 class="react-auth-header">React Authentication</h2>
+        <p class="react-auth-description">
           React Authentication app is fully built using redux and other react-hooks. The features include registeration,
           login and route gaurd that allows only logged in users to be able to access certain routes.
         </p>
@@ -22,17 +23,19 @@
             <li>Chakra UI</li>
           </ul>
         </div>
-        <div class="task-manager-link-section">
+        <div class="react-auth-link-section">
           <a href="https://github.com/awasevalentine/react-full-authentication" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
           <a href="https://full-react-auth.netlify.app/" target="_blank">Visit Website</a>
         </div>
       </div>
+    </div>
       <!-- End of React Authentication section -->
-      <!-- Loan request section -->
-      <div class="col-sm-12 col-md-5 loan-request-details">
-        <div class="sub-wrapper">
-        <h2 class="loan-request-header">Loan Request</h2>
-        <p class="loan-request-description">
+    <!-- Loan request section -->
+    <div class="loan-request-wrapper">
+      <div class="col-sm-12 col-md-5 loan-request-details" data-aos="slide-right" data-aos-duration="2000" >
+        <div style="margin-left: 6rem;">
+        <h2 class="loan-request-header float-right">Loan Request</h2>
+        <p class="loan-request-description2">
           An App that is specifically design for those with <span>House Rent</span>
           issues. We help you secure and renew your accomodation, and you payback by installment
         </p>
@@ -52,33 +55,65 @@
         </div>
       </div>
       </div>
-      <div class="col-sm-12 col-md-5 loan-request-image">
-      </div>
-      <!-- End of loan request section -->
-      <!-- Twitter section -->
-      <div class="col-sm-12 col-md-5 twitter-image">
-      </div>
-      <div class="col-sm-12 col-md-5 twitter-details">
-        <h2 class="twitter-header">Tweet</h2>
-        <p class="twitter-description">
-          Tweet is a replical of the twitter app that allows you to connect with friends and family,
-          send messages and as well receive updates.
-        </p>
-      <div class="tech-used">
-        <ul>
-          <li>Angular</li>
-          <li>Nest Js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>Angular Material</li>
-        </ul>
-      </div>
-      <div class="twitter-link-section">
-        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://ng-twitter.netlify.app" target="_blank">Visit Website</a>
+      <div class="col-sm-12 col-md-5 loan-request-image" data-aos="slide-left" data-aos-duration="2000">
       </div>
     </div>
+      <!-- End of loan request section -->
+      <!-- Task Manager section -->
+    <div class="todo-wrapper">
+      <div class="col-sm-12 col-md-5 todo-image" data-aos="slide-right" data-aos-duration="2000">
+      </div>
+      <div class="col-sm-12 col-md-5 todo-details" data-aos="slide-left" data-aos-duration="2000">
+        <h2 class="todo-header">Task Manager</h2>
+        <p class="todo-description">
+          Don't miss out on any task, get them done timely. This app is specifically design to help you <span>Manage your daily schedules or activities</span>
+          it helps you to keep track of all ongoing, cancelled and completed task/schedules
+        </p>
+        <div class="tech-used">
+          <ul>
+            <li>Angular</li>
+            <li>Nest Js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Angular Material</li>
+          </ul>
+        </div>
+        <div class="todo-link-section">
+          <a href="https://github.com/awasevalentine/Todo-App"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://ng-task-managers.netlify.app/" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+      <!-- End of Task Manager section -->
+      <!-- Twitter section -->
+    <div class="twitter-section-wrapper">
+      <div class="col-sm-12 col-md-5 twitter-details" data-aos="slide-right" data-aos-duration="2000">
+        <div style="margin-left: 6rem;">
+          <h2 class="twitter-header">Tweet</h2>
+          <p class="twitter-description2">
+            Tweet is a replical of the twitter app that allows you to connect with friends and family,
+            send messages and as well receive updates.
+          </p>
+        <div class="tech-used">
+          <ul>
+            <li>Angular</li>
+            <li>Nest Js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Angular Material</li>
+          </ul>
+        </div>
+        <div class="twitter-link-section">
+          <a href="" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://ng-twitter.netlify.app" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-5 twitter-image" data-aos="slide-left" data-aos-duration="2000">
+    </div>
+  </div>
     <!-- End of twitter section -->
   </div>
   <div class="view-more-portfolio">
@@ -129,6 +164,20 @@
               </div>
             </div>
     </div>
+    <div class="col-sm-12 col-md-3 col-lg-4 pb-3 ">
+      <div class="card w-100">
+        <div class="overlay">
+        <div class="overlay-text">
+          <h2>Task Manager</h2>
+          <p>
+            Don't miss out on any task, get them done timely. This app is specifically design to help you Manage your daily schedules or activities
+            it helps you to keep track of all ongoing, cancelled and completed task/schedules
+          </p>
+          <a href="https://ng-task-managers.netlify.app/" target="_blank">Visit Website</a>
+        </div>
+        </div>
+      </div>
+</div>
     <div class="col-sm-12 col-md-3 col-lg-4 pb-3">
             <div class="card w-100">
               <div class="overlay">
